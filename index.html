@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style></style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Weather App</h2>
+      <div class="row">
+        <input type="text" placeholder="Type Here" id="inputBox" />
+        <button class="btn" id="btn">Get Weather</button>
+      </div>
+      <p id="result"></p>
+    </div>
+    <script>
+      // const btnEL = document.getElementById("btn");
+      // const resultEL = document.getElementById("result");
+      // const inputBoxEl = document.getElementById("inputBox");
+
+      //   function massage() {
+      //     btnEL.addEventListener("click", () => {
+      //       console.log("clicked");
+      //       const name = inputBoxEl.value;
+      //       console.log(inputBoxEl.value);
+      //       if (name === "") {
+      //         console.log("write");
+      //       } else {
+      //         resultEL.innerText = name;
+      //       }
+      //       inputBoxEl.value = "";
+      //     });
+      //   }
+      //   massage();
+      //   http://dataservice.accuweather.com/locations/v1/cities/search
+      //   3bf0cfe66f0377a3ec78bc0434f4a8ee
+      // API endpoint URL
+      // const apiUrl = `https://api.openweathermap.org/data/2.5/weather?units=metric&q=`;
+      // Replace 'YOUR_API_KEY' with your actual OpenWeatherMap API key
+
+      // const apiKey = "3bf0cfe66f0377a3ec78bc0434f4a8ee";
+      // const city = inputBoxEl.value; // Replace with the desired city name
+      // async function weatherApp(city) {
+      //   if (inputBoxEl.value === "") {
+      //     resultEL.style.display = "none";
+      //   } else {
+      //     resultEL.style.display = "block";
+      //     resultEL.innerHTML = "Loading...";
+      //     try {
+      //       const fatch = await fetch(apiUrl + city + `&appid=${apiKey}`);
+      //       const data = await fatch.json();
+      //       console.log(data);
+      //       resultEL.innerHTML = data.name + "  " + data.main.temp + "°C";
+      //     } catch (error) {
+      //       resultEL.style.display = "none";
+      //       resultEL.style.display = "block";
+      //       resultEL.innerHTML = "There is Problem in Network..";
+      //       resultEL.style.color = "red";
+      //     }
+      //   }
+      // }
+      // btnEL.addEventListener("click", () => {
+      //   weatherApp(inputBoxEl.value);
+      // });
+
+      // Fetch weather data
+      //   fetch(apiUrl)
+      //     .then((response) => response.json())
+      //     .then((data) => {
+      // Extract relevant information from the API response
+      //   const temperature = data.main.temp;
+      //   const description = data.weather[0].description;
+      //   console.log(data);
+
+      // Display weather information
+      //   const weatherInfo = `Current temperature in ${city}: ${temperature}°C, ${description}.`;
+      //   document.getElementById("weather-info").textContent = weatherInfo;
+      // })
+      // .catch((error) => {
+      //   console.error("Error fetching weather data:", error);
+      //   document.getElementById("weather-info").textContent =
+      //     "Error fetching weather data";
+      // });
+      // weatherApp(city);
+    </script>
+    <script src="Main.js"></script>
+  </body>
+</html>
